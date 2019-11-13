@@ -1,0 +1,4 @@
+cat Results.isoforms.results | head -n 1 > Results.isoforms.results_reorder; for i in $(cat ../Bothriechis_nigroviridis_geneorder.txt); do cat Results.genes.results | grep ${i} >> Results.isoforms.results_reorder; done
+
+cat Results.isoforms.results | head -n 1 > Results.isoforms.results_reorder; for i in $(cat ../Bothriechis_nubestris_geneorder.txt); do cat Results.genes.results | grep ${i} >> Results.isoforms.results_reorder; done
+ 
